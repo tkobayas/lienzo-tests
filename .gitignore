@@ -4,3 +4,4 @@ target
 # IntelliJ IDEA config files
 .idea
 lienzo-tests.iml
+**/.DS_Store

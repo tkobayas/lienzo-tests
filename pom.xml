@@ -75,6 +75,16 @@
       <artifactId>gwt-dev</artifactId>
       <version>${version.com.google.gwt}</version>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.annotation</groupId>
+          <artifactId>javax.annotation-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
@@ -82,6 +92,12 @@
       <artifactId>gwt-user</artifactId>
       <version>${version.com.google.gwt}</version>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!-- Other dependencies -->
